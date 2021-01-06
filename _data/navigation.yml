@@ -1,0 +1,14 @@
+- text: Home
+  permalink: /
+- text: Biography
+  permalink: /biography
+- text: Press
+  permalink: /press
+- text: Videos
+  permalink: /videos
+- text: Performances
+  permalink: /performances
+- text: Projects
+  permalink: /projects
+- text: Contact
+  permalink: /contact
