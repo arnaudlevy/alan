@@ -6,54 +6,21 @@ permalink: /videos
 
 <h1>Videos</h1>
 
-https://www.youtube.com/embed/pN-tX4HxeXQ
-
-https://www.youtube.com/embed/6gJ29OLi2-U
-
-<location>/media/mp3/Moussorgsky gate of Kiev.mp3</location>
-<creator>Alan Gampel</creator>
-<album>The Great Gate of Kiev - Modest Moussorgsky</album>
-
-<location>/media/mp3/Stravinsky The infernal Dance.mp3</location>
-<creator>Alan Gampel</creator>
-<album>The Infernal Dance - Igor Stravinsky</album>
-
-<location>/media/mp3/Prokovieiv Allegro Inquieto.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Allegro Inquieto - Sergei Prokovivev</album>
-
-<location>/media/mp3/Beethoven  appassionata.mp3</location>
-<creator>Alan Gampel</creator>
-<album>"Appassionata" - Allegro assai - Beethoven</album>
-
-<location>/media/mp3/Sonate Piano 31.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Moderato Cantabile N°31 Op. 110 - Beethoven</album>
-
-<location>/media/mp3/Sonate Piano 16.mp3</location>
-<creator>Alan Gampel</creator>
-<album>No16 Op31 No1 Allegro Vivace - Beethoven</album>
-
-<location>/media/mp3/Chopin Variation1.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Op. 2 Var.1 - Frederic Chopin</album>
-
-<location>/media/mp3/Chopin Scherzo1.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Op. 20 N°1 - Frederic Chopin</album>
-
-<location>Chopin ballade N°4.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Chopin ballade N°4</album>
-
-<location>/media/mp3/LisztSonata.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Piano Sonata in B minor - Franz Liszt</album>
-
-<location>/media/mp3/Chopin Allegro.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Op. 58 Allegro maestoso - Frederic Chopin</album>
-
-<location>/media/mp3/Chopin, Sonata finale.mp3</location>
-<creator>Alan Gampel</creator>
-<album>Op. 58 Allegro Finale - Frederic Chopin</album>
+<div class="row">
+  {% for media in site.data.medias %}
+  <div class="col-md-6 mt-5">
+    {% if media.mp3 %}
+      <audio controls src="/assets/mp3/{{media.mp3}}" class="audio-responsive"></audio>
+    {% endif %}
+    {% if media.youtube %}
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ media.youtube }}" allowfullscreen title=""></iframe>
+      </div>
+    {% endif %}
+    <h2 class="h4 mt-3">
+      {{ media.title }}<br>
+    </h2>
+    <p>{{ media.composer }}</p>
+  </div>
+  {% endfor %}
+</div>
