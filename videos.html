@@ -7,15 +7,19 @@ permalink: /videos
 <h1>Videos</h1>
 
 <div class="row">
-  {% for media in site.data.medias %}
+  {% for media in site.data.videos %}
   <div class="col-md-6 mt-5">
-    {% if media.mp3 %}
-      <audio controls src="/assets/mp3/{{media.mp3}}" class="audio-responsive"></audio>
-    {% endif %}
     {% if media.youtube %}
       <div class="embed-responsive embed-responsive-16by9">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ media.youtube }}" allowfullscreen title=""></iframe>
       </div>
+    {% else %}
+      <img src="/assets/images/medias/{{ media.mp3 | replace: 'mp3', 'jpg' }}" alt="{{ media.title }}" class="img-fluid">
+    {% endif %}
+    {% if media.image %}
+    {% endif %}
+    {% if media.mp3 %}
+      <audio controls src="/assets/mp3/{{media.mp3}}" class="audio-responsive mt-3"></audio>
     {% endif %}
     <h2 class="h4 mt-3">
       {{ media.title }}<br>

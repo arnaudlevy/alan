@@ -9,10 +9,10 @@
   mp3: beethoven-appassionata.mp3
 - title: Moderato Cantabile N°31 Op. 110
   composer: Beethoven
-  mp3: sonate-piano-31.mp3
+  mp3: beethoven-sonate-piano-31.mp3
 - title: No16 Op31 No1 Allegro Vivace
   composer: Beethoven
-  mp3: sonate-piano-16.mp3
+  mp3: beethoven-sonate-piano-16.mp3
 - title: The Great Gate of Kiev
   composer: Modest Moussorgsky
   mp3: moussorgsky-gate-of-kiev.mp3
@@ -20,8 +20,8 @@
   composer: Igor Stravinsky
   mp3: stravinsky-the-infernal-dance.mp3
 - title: Allegro Inquieto
-  composer: Sergei Prokoviev
-  mp3: prokovieiv-allegro-inquieto.mp3
+  composer: Sergei Prokofiev
+  mp3: prokofiev-allegro-inquieto.mp3
 - title: Piano Sonata in B minor
   composer: Franz Liszt
   mp3: liszt-sonata.mp3
