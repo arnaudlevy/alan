@@ -1,14 +1,8 @@
-- text: Home
+- text: Accueil
   permalink: /
-- text: Biography
-  permalink: /biography
-- text: Press
-  permalink: /press
-- text: Videos
-  permalink: /videos
-- text: Performances
-  permalink: /performances
-- text: Projects
-  permalink: /projects
-- text: Contact
-  permalink: /contact
+- text: Pianiste virtuose
+  permalink: /pianiste
+- text: Publications universitaire
+  permalink: /publications
+- text: Projets artistiques & pédagogiques
+  permalink: /projets
