@@ -4,8 +4,15 @@ layout: default
 description: Alan Gampel, pianiste virtuose
 permalink: /pianiste
 ---
+<ul class="list-inline text-center">
+  <li class="list-inline-item"><a href="#biographie" class="text-muted">Biographie</a></li>
+  <li class="list-inline-item"><a href="#archives" class="text-muted">Archives</a></li>
+  <li class="list-inline-item"><a href="#enregistrements" class="text-muted">Enregistrements</a></li>
+  <li class="list-inline-item"><a href="#performances" class="text-muted">Performances</a></li>
+  <li class="list-inline-item"><a href="#articles" class="text-muted">Articles de presse</a></li>
+</ul>
 
-<h2 class="text-center">Biography</h2>
+<h2 id="biographie" class="text-center">Biographie</h2>
 
 <div class="row">
   <div class="offset-md-1 col-md-4 mt-5">
@@ -105,7 +112,7 @@ permalink: /pianiste
   </div>
 </div>
 
-<h2 class="text-center mt-5">Archives</h2>
+<h2 id="archives" class="text-center mt-5">Archives</h2>
 
 <div class="row">
   {% for new in site.data.news %}
@@ -116,7 +123,7 @@ permalink: /pianiste
   {% endfor %}
 </div>
 
-<h2 class="text-center">Enregistrements</h2>
+<h2 id="enregistrements" class="text-center">Enregistrements</h2>
 
 <div class="row">
   {% for media in site.data.videos %}
@@ -141,7 +148,7 @@ permalink: /pianiste
   {% endfor %}
 </div>
 
-<h2 class="text-center">Performances</h2>
+<h2 id="performances" class="text-center">Performances</h2>
 
 <div class="row">
   <div class="col-md-6 mt-5">
@@ -242,7 +249,7 @@ permalink: /pianiste
   </div>
 </div>
 
-<h2 class="text-center">Articles de presse</h2>
+<h2 id="articles" class="text-center">Articles de presse</h2>
 
 <div class="row">
   {% for release in site.data.press %}
