@@ -11,7 +11,9 @@
 nav
   .active
     border-bottom: 2px solid #000000
-
+  @include media-breakpoint-down(md)
+    .logo
+      font-size: 26px
 h1
   text-align: center
   margin: 30px 0 15px

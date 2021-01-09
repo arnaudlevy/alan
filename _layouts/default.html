@@ -9,25 +9,33 @@
     <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   </head>
   <body>
-    <div class="container">
-      <nav class="text-center">
-        <a class="navbar-brand logo" href="/">Alan Gampel</a><br>
-        <ul class="nav d-flex justify-content-center">
+    <nav class="navbar flex-md-column flex-row text-md-center navbar-expand-md navbar-light mb-4">
+      <a class="navbar-brand logo" href="/">Alan Gampel</a>
+      <button class="navbar-toggler border-0 mr-n2 ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#menu"
+              aria-controls="navbarsExample04"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav d-flex flex-column flex-md-row justify-content-md-center collapse navbar-collapse">
           {% for nav in site.data.navigation %}
             <li class="nav-item"><a href="{{ nav.permalink }}" class="nav-link {% if nav.permalink == page.url %} active{% endif %}">{{ nav.text }}</a></li>
           {% endfor %}
         </ul>
-      </nav>
-      <main>
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </main>
-    </div>
+      </div>
+    </nav>
+    {{ content }}
     <footer class="mt-5">
       <div class="container">
         <a class="logo" href="/">Alan Gampel</a><br>
         <p class="text-right mt-5">publicrelations[at]gampel.com</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 </html>
