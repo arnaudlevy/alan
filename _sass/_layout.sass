@@ -11,20 +11,20 @@
 nav
   .active
     border-bottom: 2px solid #000000
-  @include media-breakpoint-down(md)
-    .logo
-      font-size: 26px
+  .navbar-toggler
+    padding-left: 20px
+    padding-right: 10px
+    .navbar-toggler-icon
+      width: 20px
 h1
   text-align: center
   margin: 30px 0 15px
 
-@include media-breakpoint-down(md)
-  .img-index
-    object-fit: cover
-    height: 200px
-
 .audio-responsive
   width: 100%
+
+.collapsing
+  transition: none !important
 
 footer
   background: #000000
@@ -33,3 +33,20 @@ footer
   .logo
     color: #FFFFFF
     font-size: 20px
+
+@include media-breakpoint-down(md)
+  #menu
+    position: absolute
+    z-index: 10000
+    background: rgba(255, 255, 255, 0.95)
+    top: 60px
+    left: 0
+    right: 0
+    padding: 20px
+    ul
+      margin-right: -20px
+  .logo
+    font-size: 26px
+  .img-index
+    object-fit: cover
+    height: 200px
